@@ -70,13 +70,19 @@ var connection = mysql.createConnection({
   function start() {
     queryAllSongs()
     inquirer
-      .prompt({
-        name: "productID",
-        type: "list",
-        message: "Would you like to purcahse an item? whats the ID of the prodcut you would like to purchase?",
-        input: ["POST", "BID", ""]
-        
-      })
+    .prompt([
+      {   type:"input",
+          message: "Would you like to buy an item? To do just put the id of the item here!",
+          name:"id"
+  
+      },
+      {   type:"input",
+          message: "how many units would you like to buy? (enter a number)",
+          name:"quantity"
+  
+      },  
+    ])
+    
       .then(function(answer) {
         // based on their answer, either call the bid or the post functions
         
