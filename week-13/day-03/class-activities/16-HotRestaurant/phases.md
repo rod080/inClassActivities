@@ -10,7 +10,9 @@ Your application will be made up of two parts:
 
 Spend the time necessary to map this application out. Consider the concepts we've covered in class so far:
 
-* Servers
+* Servers:
+will need a sever that and port 
+
 * Routing
 * APIs
 * AJAX (GET and POST Requests)

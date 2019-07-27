@@ -31,6 +31,8 @@ var characters = [{
 app.get("/", function(req, res) {
   res.send("Welcome to the Star Wars Page!");
 });
+// ':' is placeholder for a query parameter 
+//what kinds of query parameters are there.
 
 app.get("/:character", function(req, res) {
   var chosen = req.params.character;
@@ -47,3 +49,7 @@ app.get("/:character", function(req, res) {
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
+
+
+// I actually missed the point of activity 9 
+// cd ..
