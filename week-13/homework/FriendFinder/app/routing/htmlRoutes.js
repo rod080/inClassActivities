@@ -1,14 +1,10 @@
 
 
 var path = require("path");
-// app.get("/survey", function(req, res) {
-//     res.sendFile(path.join("app/public/survey.html"));
-//   });
 
-//   app.get("/", function(req, res) {
-//     res.sendFile(path.join("app/public/home.html"));
-//   });
+//waht does path do again?
 
+//here we are exporting the htmlRoutes
   module.exports = function(app) {
     // HTML GET Requests
     // Below code handles when users "visit" a page.
@@ -25,9 +21,5 @@ var path = require("path");
   
 
 
-  // app.listen(PORT, function() {
-  //   console.log("App listening on PORT " + PORT);
-  // });
-  
 
   
